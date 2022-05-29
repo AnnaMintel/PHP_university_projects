@@ -39,19 +39,7 @@ foreach ($arr as $key => $value) {
     echo '</tr>';
 }
 
-// for ($tr=1; $tr<=$rows; $tr++){ 
-//     echo '<tr>';
-//     foreach ($arr as &$value) {
-//         echo '<td>'. $value .'</td>';
-//     }
-//     // for ($td=1; $td<=$cols; $td++){ 
-//     //     echo '<td>'. $tr*$td .'</td>';
-//     // }
-//     echo '</tr>';
-// }
 echo '</table>';
-
-
 
 ?>
 
