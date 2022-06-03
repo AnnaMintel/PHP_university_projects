@@ -25,6 +25,8 @@ $pass = htmlspecialchars($_POST['pass']);
         echo ("Hello USER2! Login sucessfull");
     } else if ($name === $user3 && $pass === $pass3) {
         echo ("Hello USER3! Login sucessfull");
+    } else if ($name === '' || $pass === ''){
+        echo (" ");
     } else{
         echo ("Hello USER! Access denied! Enter correct data") ;
     }    
