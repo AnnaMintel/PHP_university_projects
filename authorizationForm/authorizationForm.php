@@ -1,13 +1,12 @@
 <html>
  <head>
-  <title>Form</title> 
+  <title>Form</title>  
  </head>
  <body>
 
  <?php echo '<h2>Authorization form with validation</h2>'; ?>
 
- <?php
-
+ <?php 
  echo '<form method="post" action="authorizationForm.php">
       <p> User Name: <input type="text" name="name" > </p>
       <p> Password: <input type="pass" name="pass"> </p>
@@ -15,7 +14,7 @@
     </form>';  
 
  require 'users.php';
-
+ 
 $name = htmlspecialchars($_POST['name']);
 $pass = htmlspecialchars($_POST['pass']);
   
@@ -30,8 +29,6 @@ $pass = htmlspecialchars($_POST['pass']);
     } else{
         echo ("Hello USER! Access denied! Enter correct data") ;
     }    
-    
 ?>
-
  </body>
 </html>
